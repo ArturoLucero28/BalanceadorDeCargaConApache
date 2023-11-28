@@ -13,9 +13,9 @@
         -4.1.3 [Configurar ACL](#Configurar-ACL) 
  - 4.2 [Configuración de la Infraestructura en AWS](#configuración-de-la-infraestructura-en-aws)
  - 
-        - 4.2.1 [Capa 1: Balanceador de Carga](#capa-1:-balanceador-de-carga)
-        - 4.2.2 [Capa 2: Servidores Web](#capa-2:-servidores-web)
-        - 4.2.3 [Capa 3: Servidor de Base de Datos](#capa-3:-servidor-de-base-de-datos)
+     - 4.2.1 [Capa 1: Balanceador de Carga](#capa-1-balanceador-de-carga)
+     - 4.2.2 [Capa 2: Servidores Web](#capa-2-servidores-web)
+     - 4.2.3 [Capa 3: Servidor de Base de Datos](#capa-3-servidor-de-base-de-datos)
     - 4.3 [Configuración de Certificado SSL](#configuración-de-certificado-ssl)
     - 4.6 [Despliegue de la Aplicación de Gestión de Usuarios](#despliegue-de-la-aplicación-de-gestión-de-usuarios)
     - 4.7 [Opcional: Despliegue de CMS](#opcional-despliegue-de-cms)
@@ -36,31 +36,31 @@ La infraestructura de este proyecto es un balanceador en capa 1 expuesta a red p
 
 ## Configuración Paso a Paso
 
-### 4.1 Pasos previos a la creacion de instancias
+### Pasos previos a la creacion de instancias
 
-### 4.1.1 Crear una VPC
+### Crear una VPC
 
-### 4.1.2 Configurar grupos de seguridad
+### Configurar grupos de seguridad
 
-### 4.1.3 Configurar ACL
+### Configurar ACL
 
-### 4.2 Configuración de la Infraestructura en AWS
+### Configuración de la Infraestructura en AWS
 
 -Crear las maquinas virtuales en "EC2".
 
-#### 4.2.1 Capa 1: Balanceador de Carga
+#### Capa 1: Balanceador de Carga
 
 En la capa 1 necesitaremos 1 instancia
 
-#### 4.2.2 Capa 2: Servidores Web
+#### Capa 2: Servidores Web
 
 En la capa 2 necesitaremos 2 instancias
 
-#### 4.2.3 Capa 3: Servidor de Base de Datos
+#### Capa 3: Servidor de Base de Datos
 
 En la capa 3 necesitaremos una instancia
 
-### 4.3 Configuración de Certificado SSL
+### Configuración de Certificado SSL
 
 ...
 
