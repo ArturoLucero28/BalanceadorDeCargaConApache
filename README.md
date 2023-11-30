@@ -112,7 +112,7 @@ Creamos en la siguiente dirección "/etc/apache2/sites-available/balanceador.con
     </VirtualHost>
 )
 
-Activamos el proxy que hemos realizado y reiniciamos el servidor apache.
+Activamos lo que acabamos de configurar y reiniciamos el servidor apache.
 
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/14a42d0b-10f4-4b06-8e04-8edc9a852090)
 
