@@ -57,6 +57,7 @@ En la capa 1 nos interesa en la regla de entrada habilitar HTTP (Puerto 80) y HT
 (hay que colocar sus respectivas reglas de salida)
 
 En la capa 2  colocamos las mismas reglas.
+
 En la capa 3 nos interesa colocar en los puertas de entrada MYSQL (Puerto 3306).
 
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/61cc1f78-f947-44b9-961c-7dbc737773f2)
