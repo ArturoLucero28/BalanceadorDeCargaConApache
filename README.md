@@ -117,7 +117,9 @@ Activamos lo que acabamos de configurar y reiniciamos el servidor apache.
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/14a42d0b-10f4-4b06-8e04-8edc9a852090)
 
 *Posible error*
+
 El proxy en mi caso estaba descativado y al reinciar el apache daba error, la solución sería activarlo manualmente con los siguientes comandos
+
 sudo a2enmod proxy
 sudo a2enmod proxy_http
 Tambien añadimos para asegurarnos más adelante una ausencia de errores:
