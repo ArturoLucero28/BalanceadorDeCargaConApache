@@ -108,8 +108,18 @@ Activamos el proxy que hemos realizado y reiniciamos el servidor apache.
 El proxy en mi caso estaba descativado y al reinciar el apache daba error, la solución sería activarlo manualmente con los siguientes comandos
 sudo a2enmod proxy
 sudo a2enmod proxy_http
+Tambien añadimos:
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/18fdc0cc-fda3-4638-a2be-05e15c618514)
 
-Antes de seguir aqui pasemos a la capa 2 [Capa 2: Servidores Web](#capa-2-servidores-web)
+
+Antes de seguir al siguiente paso, necesitas tener un host creado en My No-Ip y vamos a crear el host con la ip elástica que esta asociada previamente con la instancia.
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/7ecfb966-1a27-49c9-952a-5d6f05d937c2)
+
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/554bf1d6-7cc6-438c-a7cf-0e9291281b84)
+A continuacion condiguramos
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/32e4c856-303f-469f-a418-88e611154035)
+
+
 
 #### Capa 2: Servidores Web
 
