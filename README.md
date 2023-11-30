@@ -87,10 +87,11 @@ Creamos en la siguiente dirección "/etc/apache2/sites-available/balanceador.con
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/f81b78ef-e2e7-412b-92c8-365e89162b09)
 
 *(Te facilito el codigo para que puedas copiarlo en tu CMD:*
-<VirtualHost *:80>
+
+    <VirtualHost *:80>
     ServerAdmin webmaster@localhost
     DocumentRoot /var/www/html
-
+    
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 
@@ -104,7 +105,7 @@ Creamos en la siguiente dirección "/etc/apache2/sites-available/balanceador.con
 
     ProxyPass / balancer://mycluster/
     ProxyPassReverse / balancer://mycluster/
-</VirtualHost>
+    </VirtualHost>
 )
 
 Activamos el proxy que hemos realizado y reiniciamos el servidor apache.
