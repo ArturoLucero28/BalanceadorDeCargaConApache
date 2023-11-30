@@ -144,6 +144,19 @@ En la capa 2 necesitaremos 2 instancias
 
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/b6ba9f56-6b91-49ec-addb-cb7b238f70f7)
 
+Realiazamos la siguiente secuencia de comando(Actualizar el sistema e instalar git y apache):
+
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/a6da385f-3ea5-416a-a325-e7035e0531f8)
+
+Clonamos el directorio github que necesitamos en el directoro "/var/www/html/" y clonamos este directorio:
+
+sudo git clone https://github.com/josejuansanchez/iaw-practica-lamp
+
+Luego le cambiamos el nombre a usuarios para que sea mas fácil trabajar con él.
+
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/c122146c-2098-4c5f-ad56-96c71cc8a368)
+
+
 
 #### Capa 3: Servidor de Base de Datos
 
