@@ -122,6 +122,7 @@ El proxy en mi caso estaba descativado y al reinciar el apache daba error, la so
 
 sudo a2enmod proxy
 sudo a2enmod proxy_http
+
 Tambien añadimos para asegurarnos más adelante una ausencia de errores:
 
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/18fdc0cc-fda3-4638-a2be-05e15c618514)
