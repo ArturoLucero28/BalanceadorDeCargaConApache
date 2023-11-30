@@ -40,6 +40,7 @@ La infraestructura de este proyecto se trata de un balanceador en capa 1 expuest
 ### Crear una VPC
 
 En la consola de AWS buscamos VPC y creamos una VPC nueva.
+
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/2370997f-f926-4b77-9e58-e9de429004a8)
 
 Elegimos VPC y MÁS por el hecho que nos facilita la creacion de subredes públicas y privadas.
@@ -50,9 +51,11 @@ Despues de crear la VPC creamos un grupo de seguridad dirigiéndonos al panel de
 
 Colocamos el nombre y una descripcion, importante elegir la VPC que hemos creado previamente.
 En la capa 1 nos interesa en la regla de entrada habilitar HTTP (Puerto 80) y HTTPS (Puerto 443):
+
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/456b3e12-578d-4a29-b32c-aa40fa8f1ef7)
 
 (hay que colocar sus respectivas reglas de salida)
+
 En la capa 2  colocamos las mismas reglas.
 En la capa 3 nos interesa colocar en los puertas de entrada MYSQL (Puerto 3306).
 
