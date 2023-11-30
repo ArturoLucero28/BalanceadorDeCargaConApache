@@ -62,19 +62,68 @@ En la capa 3 nos interesa colocar en los puertas de entrada MYSQL (Puerto 3306).
 Podemos ver como antes al darle a VPC y MÁS están ya creadas, podemos configurarlas a nuestro gusto para que sea mas eficiente colocando sus respectivas reglas de entrada y salida correspondiente.
 ### Configuración de la Infraestructura en AWS
 
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/2b65da82-4775-4d6d-92bf-68f6b9a35bc8)
+
 -Crear las maquinas virtuales en "EC2".
 
 #### Capa 1: Balanceador de Carga
 
 En la capa 1 necesitaremos 1 instancia
 
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/eba22e65-1cb7-4426-b3de-a5bb03dd6128)
+
+Nos conectamos desde el CMD por SSH a nuestra máquina.
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/cf567f8f-6c6b-4b10-bd9d-5a3de63576dd)
+
+En primer lugar ponemos la siguiente secuencia de comandos para actualizar el sistema e instalar apache:
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/1ea42336-bbd4-468e-b9ae-71771e1a49e6)
+Creamos en la siguiente dirección "/etc/apache2/sites-available/balanceador.conf" un archivo en el que pondremos lo siguiente:
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/f81b78ef-e2e7-412b-92c8-365e89162b09)
+
+(Te facilito el codigo para que puedas copiarlo en tu CMD:
+<VirtualHost *:80>
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/html
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+    ProxyRequests Off
+    ProxyPreserveHost On
+
+    <Proxy balancer://mycluster>
+        BalancerMember http://Aquí colocad vuestra ip del servidor 1/
+        BalancerMember http://Aquí colocad vuestra ip del servidor 2/
+    </Proxy>
+
+    ProxyPass / balancer://mycluster/
+    ProxyPassReverse / balancer://mycluster/
+</VirtualHost>
+)
+
+Activamos el proxy que hemos realizado y reiniciamos el servidor apache.
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/14a42d0b-10f4-4b06-8e04-8edc9a852090)
+
+*Posible error*
+El proxy en mi caso estaba descativado y al reinciar el apache daba error, la solución sería activarlo manualmente con los siguientes comandos
+sudo a2enmod proxy
+sudo a2enmod proxy_http
+
+Antes de seguir aqui pasemos a la capa 2 [Capa 2: Servidores Web](#capa-2-servidores-web)
+
 #### Capa 2: Servidores Web
 
 En la capa 2 necesitaremos 2 instancias
 
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/b6ba9f56-6b91-49ec-addb-cb7b238f70f7)
+
+
 #### Capa 3: Servidor de Base de Datos
 
 En la capa 3 necesitaremos una instancia
+
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/7c2277e6-b65c-4442-89e2-3f725e0c7071)
+
 
 ### Configuración de Certificado SSL
 
