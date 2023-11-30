@@ -16,10 +16,8 @@
      - 4.2.1 [Capa 1: Balanceador de Carga](#capa-1-balanceador-de-carga)
      - 4.2.2 [Capa 2: Servidores Web](#capa-2-servidores-web)
      - 4.2.3 [Capa 3: Servidor de Base de Datos](#capa-3-servidor-de-base-de-datos)
-    - 4.3 [Configuración de Certificado SSL](#configuración-de-certificado-ssl)
-    - 4.6 [Despliegue de la Aplicación de Gestión de Usuarios](#despliegue-de-la-aplicación-de-gestión-de-usuarios)
-    - 4.7 [Opcional: Despliegue de CMS](#opcional-despliegue-de-cms)
-5. [Conclusión](#Conclusión)
+5. [Resultado](#Resultado)
+6. [Conclusión](#Conclusión)
 
 ## Introducción
 
@@ -154,10 +152,7 @@ En la capa 3 necesitaremos una instancia
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/7c2277e6-b65c-4442-89e2-3f725e0c7071)
 
 
-### Configuración de Certificado SSL
-
-...
-
+## Resultado
 ## Conclusión
 
 
