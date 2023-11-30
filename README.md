@@ -156,7 +156,32 @@ Luego le cambiamos el nombre a usuarios para que sea mas fácil trabajar con él
 
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/c122146c-2098-4c5f-ad56-96c71cc8a368)
 
+Tenemos que crear un archivo  en "sudo nano /etc/apache2/sites-available/apache1.conf" y copiar lo siguiente:
 
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/409ffa78-f5c2-44c3-9c70-264718fdb806)
+
+Te lo facilito para que puedas copiarlo:
+
+    <VirtualHost *:443>
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/html/usuarios/src
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+    </VirtualHost>
+
+Activamos la SSL y reiniciamos apache
+
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/ceb8bee5-853b-4a43-9896-82c3e6061e28)
+
+Seguimos activando y volvemos a reinciar para instaurar los cambios:
+
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/8059f7ac-6a65-4af7-9672-fb1e6bd9e200)
+
+*PARA LA SEGUNDA INSTANCIA REALIZAREMOS LOS MISMOS PASOS QUE EN LA PRIMERA*
+
+(Vuelve aqui para empezar)
+
+ [Capa 2: Servidores Web](#capa-2-servidores-web)
 
 #### Capa 3: Servidor de Base de Datos
 
