@@ -121,6 +121,7 @@ Activamos lo que acabamos de configurar y reiniciamos el servidor apache.
 El proxy en mi caso estaba descativado y al reinciar el apache daba error, la solución sería activarlo manualmente con los siguientes comandos
 
 sudo a2enmod proxy
+
 sudo a2enmod proxy_http
 
 Tambien añadimos para asegurarnos más adelante una ausencia de errores:
