@@ -55,6 +55,7 @@ En la capa 1 nos interesa en la regla de entrada habilitar HTTP (Puerto 80) y HT
 (hay que colocar sus respectivas reglas de salida)
 En la capa 2  colocamos las mismas reglas.
 En la capa 3 nos interesa colocar en los puertas de entrada MYSQL (Puerto 3306).
+
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/61cc1f78-f947-44b9-961c-7dbc737773f2)
 
 ### Configurar ACL
@@ -73,14 +74,19 @@ En la capa 1 necesitaremos 1 instancia
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/eba22e65-1cb7-4426-b3de-a5bb03dd6128)
 
 Nos conectamos desde el CMD por SSH a nuestra máquina.
+
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/cf567f8f-6c6b-4b10-bd9d-5a3de63576dd)
 
+
 En primer lugar ponemos la siguiente secuencia de comandos para actualizar el sistema e instalar apache:
+
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/1ea42336-bbd4-468e-b9ae-71771e1a49e6)
+
 Creamos en la siguiente dirección "/etc/apache2/sites-available/balanceador.conf" un archivo en el que pondremos lo siguiente:
+
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/f81b78ef-e2e7-412b-92c8-365e89162b09)
 
-(Te facilito el codigo para que puedas copiarlo en tu CMD:
+*(Te facilito el codigo para que puedas copiarlo en tu CMD:*
 <VirtualHost *:80>
     ServerAdmin webmaster@localhost
     DocumentRoot /var/www/html
@@ -102,23 +108,27 @@ Creamos en la siguiente dirección "/etc/apache2/sites-available/balanceador.con
 )
 
 Activamos el proxy que hemos realizado y reiniciamos el servidor apache.
+
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/14a42d0b-10f4-4b06-8e04-8edc9a852090)
 
 *Posible error*
 El proxy en mi caso estaba descativado y al reinciar el apache daba error, la solución sería activarlo manualmente con los siguientes comandos
 sudo a2enmod proxy
 sudo a2enmod proxy_http
-Tambien añadimos:
+Tambien añadimos para asegurarnos más adelante una ausencia de errores:
+
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/18fdc0cc-fda3-4638-a2be-05e15c618514)
 
 
 Antes de seguir al siguiente paso, necesitas tener un host creado en My No-Ip y vamos a crear el host con la ip elástica que esta asociada previamente con la instancia.
+
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/7ecfb966-1a27-49c9-952a-5d6f05d937c2)
 
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/554bf1d6-7cc6-438c-a7cf-0e9291281b84)
-A continuacion condiguramos
-![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/32e4c856-303f-469f-a418-88e611154035)
 
+A continuacion configuramos:
+
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/32e4c856-303f-469f-a418-88e611154035)
 
 
 #### Capa 2: Servidores Web
