@@ -29,7 +29,7 @@ La infraestructura mejorará la seguridad al permitir que solo el balanceador te
 
 ## Infraestructura
 
-La infraestructura de este proyecto se trata de un balanceador en capa 1 expuesta a red pública con dos servidor web en Backend y capa 2 (red privada) ademas de un servidor de BBDD en capa 3 (red privada).
+La infraestructura de este proyecto consiste en un balanceador en la capa 1 expuesta a la red pública con dos servidores web en el back-end en la capa 2 (red privada), además de un servidor de base de datos en la capa 3 (red privada).
 
 ## Configuración Paso a Paso
 
@@ -188,6 +188,18 @@ Seguimos activando y volvemos a reinciar para instaurar los cambios:
 En la capa 3 necesitaremos una instancia
 
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/7c2277e6-b65c-4442-89e2-3f725e0c7071)
+
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/b8e06199-0256-436f-94b1-9b838fe3abfc)
+
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/a5639669-41be-421c-bf38-740883fb04d2)
+
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/6cadf34d-7306-4b47-b878-2aff9bcaa76b)
+
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/b187a04b-17b1-419b-a82a-f62b1f1fc2cc)
+
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/155d87ba-f13a-422f-b1af-70bf4614633c)
+
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/db65bcc4-2c92-4f5b-8715-129975168977)
 
 
 ## Resultado
