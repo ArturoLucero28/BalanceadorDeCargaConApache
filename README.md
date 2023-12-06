@@ -190,6 +190,7 @@ En la capa 3 necesitaremos una instancia
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/7c2277e6-b65c-4442-89e2-3f725e0c7071)
 
 Instalamos maria db servidor y actualizamos previamente el sistema
+
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/b8e06199-0256-436f-94b1-9b838fe3abfc)
 
 colocamos nuestra ip en el archivo sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
