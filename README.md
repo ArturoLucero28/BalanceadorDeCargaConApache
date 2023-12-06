@@ -201,6 +201,9 @@ En la capa 3 necesitaremos una instancia
 
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/db65bcc4-2c92-4f5b-8715-129975168977)
 
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/ab8072be-fb04-4836-bd67-ad075e1e99ed)
+
+
 
 ## Resultado
 ## Conclusión
