@@ -192,16 +192,13 @@ En la capa 3 necesitaremos una instancia
 Instalamos maria db servidor y actualizamos previamente el sistema
 
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/b8e06199-0256-436f-94b1-9b838fe3abfc)
-
-colocamos nuestra ip en el archivo sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
-
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/a5639669-41be-421c-bf38-740883fb04d2)
 
-Pasamos la base de datos de las apache a nuestra maquina sql
+Colocamos nuestra ip en el archivo sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
 
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/6cadf34d-7306-4b47-b878-2aff9bcaa76b)
 
-Un ejemplo de los comandos
+Pasamos la base de datos de las apache a nuestra maquina sql
 
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/b187a04b-17b1-419b-a82a-f62b1f1fc2cc)
 
