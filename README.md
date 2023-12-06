@@ -133,7 +133,7 @@ Antes de seguir al siguiente paso, necesitas tener un host creado en My No-Ip y 
 
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/554bf1d6-7cc6-438c-a7cf-0e9291281b84)
 
-A continuacion configuramos:
+A continuación configuramos:
 
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/32e4c856-303f-469f-a418-88e611154035)
 
@@ -206,12 +206,19 @@ Pasamos la base de datos de las apache a nuestra maquina sql
 
 ![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/db65bcc4-2c92-4f5b-8715-129975168977)
 
-![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/ab8072be-fb04-4836-bd67-ad075e1e99ed)
-
-
-
 ## Resultado
+
+![image](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/58e8e82b-d980-486f-b2dc-6b89cff7c0df)
+
 ## Conclusión
 
+Al realizar varias capturas sin guardar me faltan algunos pasos por comentar por ejemplo la creacion del usuario en mysql o la modificacion en los apaches del sudo nano /var/www/html/usuarios/src/config.php, principalmente me han salido dos errores grandes
 
+![fc0eaaf7-a048-4875-8985-48d931c9247b](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/aa894e06-976f-4d15-a19b-1163d22334a9)
+
+La solución ha sido arregalar la configuracion del fichero mencionado anteriormente que en mi caso lo tenía mal configurado.
+
+![be301609-5bf3-4f42-bf8e-9ad8b38ee8ec](https://github.com/ArturoLucero28/BalanceadorDeCargaConApache/assets/146435794/0b45586f-5459-455a-86e9-9ed5564f05bb)
+
+Y luego este error ha sido falta de permisos en el directorio /var/www/html hay que otorgarle permisos de ejecución.
 
